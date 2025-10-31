@@ -5,8 +5,8 @@ void * imprimir_mensaje( void *puntero );
 int main()
 {
 pthread_t hilo1, hilo2; char *mensaje1 = "Hola"; char *mensaje2 = "Mundo";
-pthread_create(&hilo1,NULL,imprimir_mensaje,(void*)mensaje1); sleep(100);
-pthread_create(&hilo2,NULL,imprimir_mensaje,(void*)mensaje2); sleep(100);
+pthread_create(&hilo1,NULL,imprimir_mensaje,(void*)mensaje1); sleep(10);
+pthread_create(&hilo2,NULL,imprimir_mensaje,(void*)mensaje2); sleep(10);
 system("PAUSE");
 exit(0);
 return 1;
